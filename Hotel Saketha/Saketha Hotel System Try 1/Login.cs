@@ -1,7 +1,12 @@
 ﻿using MySql.Data.MySqlClient;
+using Saketha_Hotel_System_Try_1.Accountant;
 using Saketha_Hotel_System_Try_1.Director;
 using Saketha_Hotel_System_Try_1.Head_Chef;
+using Saketha_Hotel_System_Try_1.HR_Manager;
+using Saketha_Hotel_System_Try_1.Logistic_Manager;
+using Saketha_Hotel_System_Try_1.Reception;
 using Saketha_Hotel_System_Try_1.Restaurant_Manager;
+using Saketha_Hotel_System_Try_1.Sales_Manager;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,17 +53,47 @@ namespace Saketha_Hotel_System_Try_1
                 if (dt.Rows[0][0].ToString() == "1")
                 {
                     errormsg.Visible = false;
-                    if (usernametxt.Text == "Rmanager")
+                    if (usernametxt.Text == "Reception")
+                    {
+                        Reception_Home rh = new Reception_Home();
+                        this.Hide();
+                        rh.Show();
+                    }
+                    else if (usernametxt.Text == "Rmanager")
                     {
                         Orders ro = new Orders();
                         this.Hide();
                         ro.Show();
+                    }
+                    else if (usernametxt.Text == "Smanager")
+                    {
+                        Sales_Report sr = new Sales_Report();
+                        this.Hide();
+                        sr.Show();
                     }
                     else if (usernametxt.Text == "Headchef")
                     {
                         Tickets ht = new Tickets();
                         this.Hide();
                         ht.Show();
+                    }
+                    else if (usernametxt.Text == "HRmanager")
+                    {
+                        Add_Employees ae = new Add_Employees();
+                        this.Hide();
+                        ae.Show();
+                    }
+                    else if (usernametxt.Text == "Accountant")
+                    {
+                        Profit_Report pr = new Profit_Report();
+                        this.Hide();
+                        pr.Show();
+                    }
+                    else if (usernametxt.Text == "Lmanager")
+                    {
+                        Lmanager_home lh = new Lmanager_home();
+                        this.Hide();
+                        lh.Show();
                     }
                     else if (usernametxt.Text == "Director")
                     {

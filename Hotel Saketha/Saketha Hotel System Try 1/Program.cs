@@ -1,9 +1,11 @@
 ﻿using Saketha_Hotel_System_Try_1.Accountant;
 using Saketha_Hotel_System_Try_1.Director;
 using Saketha_Hotel_System_Try_1.Head_Chef;
+using Saketha_Hotel_System_Try_1.HR_Manager;
 using Saketha_Hotel_System_Try_1.Logistic_Manager;
+using Saketha_Hotel_System_Try_1.Reception;
 using Saketha_Hotel_System_Try_1.Restaurant_Manager;
-
+using Saketha_Hotel_System_Try_1.Sales_Manager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
